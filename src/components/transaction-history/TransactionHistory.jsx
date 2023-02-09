@@ -1,21 +1,28 @@
 import PropTypes from 'prop-types';
 import TransactionHistoryItem from './TransactionHistoryItem';
+import css from './TransactionHistory.module.css';
+
+const table = document.getElementById('table');
+console.log(table);
+
+// table.forEach(element => {
+//   console.log(element);
+// });
 
 export default function TransactionHistory({ items }) {
-  console.log(items);
   return (
-    <table className="transaction-history">
+    <table id="table" className={css.transactionHistory}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.transactionHistoryHeadTitle}>Type</th>
+          <th className={css.transactionHistoryHeadTitle}>Amount</th>
+          <th className={css.transactionHistoryHeadTitle}>Currency</th>
         </tr>
       </thead>
       <tbody>
         {items.map(item => {
           return (
-            <tr key={item.id}>
+            <tr className={css.transactionHistoryBodyRow} key={item.id}>
               <TransactionHistoryItem
                 type={item.type}
                 amount={item.amount}

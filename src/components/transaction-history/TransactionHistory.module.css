@@ -1,0 +1,45 @@
+.transactionHistory {
+  width: 400px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.transactionHistoryHeadTitle {
+  text-transform: uppercase;
+  width: 33.3%;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: aquamarine;
+}
+
+.transactionHistoryHeadTitle:first-child {
+  border-top-left-radius: 10px;
+}
+
+.transactionHistoryHeadTitle:last-child {
+  border-top-right-radius: 10px;
+}
+
+.transactionHistoryBodyRow:nth-child(2n) {
+  background-color: #f0f2f5;
+}
+
+.transactionHistoryBodyRow:last-child
+  > .transactionHistoryBodyRowData:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.transactionHistoryBodyRow:last-child
+  > .transactionHistoryBodyRowData:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.transactionHistoryBodyRowData {
+  padding: 10px 20px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+}
