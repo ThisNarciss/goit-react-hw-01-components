@@ -3,11 +3,6 @@ import TransactionHistoryItem from './TransactionHistoryItem';
 import css from './TransactionHistory.module.css';
 
 const table = document.getElementById('table');
-console.log(table);
-
-// table.forEach(element => {
-//   console.log(element);
-// });
 
 export default function TransactionHistory({ items }) {
   return (
