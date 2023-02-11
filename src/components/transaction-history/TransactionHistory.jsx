@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import TransactionHistoryItem from './TransactionHistoryItem';
 import css from './TransactionHistory.module.css';
 
-const table = document.getElementById('table');
-
 export default function TransactionHistory({ items }) {
   return (
     <table id="table" className={css.transactionHistory}>
