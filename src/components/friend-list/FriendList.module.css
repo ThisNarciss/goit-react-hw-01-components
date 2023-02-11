@@ -27,11 +27,13 @@
   border-radius: 50%;
 }
 
-.online {
+.true {
+  composes: status;
   background-color: #70cc16;
 }
 
-.offline {
+.false {
+  composes: status;
   background-color: #666666;
 }
 

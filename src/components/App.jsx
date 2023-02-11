@@ -30,6 +30,3 @@ export const App = () => {
     </div>
   );
 };
-
-const table = document.getElementById('table');
-console.log(table);
